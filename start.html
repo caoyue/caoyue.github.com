@@ -1,0 +1,116 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<title>caoyue / start</title>
+<link rel="icon" type="image/png" href="favicon.ico">
+<link rel="stylesheet" type="text/css" href="global.css">
+</head>
+<body>
+<div id="wrap">
+    <div id="HomeLink"><a href="index.html">&lt;&lt;</a></div>
+    <div class="column">
+        <div class="block">
+            <h3>GOOGLE</h3>
+            <ul class="nav">
+                <li><a href="https://www.google.com/ncr" target="_blank">Google</a></li>
+                <li><a href="https://www.google.com/reader" target="_blank">Reader</a></li>
+                <li><a href="https://mail.google.com/" target="_blank">Gmail</a></li>
+                <li><a href="https://www.google.com/calendar/" target="_blank">Calendar</a></li>
+                <li><a href="http://www.blogger.com/home" target="_blank">Blogger</a></li>
+                <li><a href="http://www.youtube.com/" target="_blank">YouTube</a></li>
+            </ul>
+        </div>
+        <div class="block">
+            <h3>TECH</h3>
+            <ul class="nav">
+                <li><a href="https://www.v2ex.com/" target="_blank">V2EX</a></li>
+                <li><a href="http://www.zhihu.com/" target="_blank">Zhihu</a></li>
+                <li><a href="http://stackoverflow.com/" target="_blank">StackOverflow</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="column">
+        <div class="block">
+            <h3>PROJECT</h3>
+            <ul class="nav">
+                <li><a href="https://github.com" target="_blank">GitHub</a></li>
+                <li><a href="https://AppHarbor.com/" target="_blank">AppHarbor</a></li>
+                <li><a href="http://cblog.apphb.com" target="_blank">CBlog</a></li>
+            </ul>
+        </div> 
+        <div class="block">
+            <h3>TIMELINE</h3>
+            <ul class="nav">
+                <li><a href="https://www.twitter.com/caoyue" target="_blank">Twitter</a></li>
+                <li><a href="https://plus.google.com/" target="_blank">Google Plus</a></li>
+                <li><a href="http://weibo.com/c4oyu3" target="_blank">Weibo</a></li> 
+                <li><a href="http://www.douban.com/people/caoyue/" target="_blank">Douban</a></li>
+                <li><a href="http://thepast.me/i" target="_blank">The Past Me</a></li>         
+            </ul>
+        </div>
+    </div>
+
+    <div class="column">
+        <div class="block">
+            <h3>TOOLS</h3>
+            <ul class="nav">
+                <li><a href="https://mail.google.com/tasks/canvas" target="_blank">Task</a></li>
+                <li><a href="https://www.evernote.com/" target="_blank">Evernote</a></li>
+                <li><a href="http://translate.google.cn/" target="_blank">Translate</a></li>
+                <li><a href="http://www.tineye.com/" target="_blank">Tinyeye</a></li>
+            </ul>
+        </div>
+        <div class="block">
+            <h3>LIFE</h3>
+            <ul class="nav">
+                <li><a href="http://www.taobao.com/" target="_blank">Taobao</a></li>
+                <li><a href="http://www.alipay.com/" target="_blank">Alipay</a></li>
+                <li><a href="http://10086.cn/" target="_blank">ChinaMobile</a></li>
+            </ul>
+        </div>          
+    </div>    
+
+    <div class="column">
+        <div class="block">
+            <h3>FUN</h3>
+            <ul class="nav">
+                <li><a href="http://acfun.tv" target="_blank">Acfun</a></li>
+                <li><a href="http://youku.com/" target="_blank">Youku</a></li>
+                <li><a href="http://www.google.cn/music/" target="_blank">Google Music</a></li>
+                <li><a href="http://xiami.com/" target="_blank">Xiami</a></li>
+                <li><a href="http://wow.178.com/" target="_blank">NGA</a></li>
+            </ul>
+        </div> 
+        <div class="block">
+            <h3>NEWS</h3>
+            <ul class="nav">
+                <li><a href="http://www.ifeng.com/" target="_blank">Ifeng</a></li>
+                <li><a href="http://163.com" target="_blank">163</a></li>
+                <li><a href="http://data.weibo.com/top" target="_blank">HOT</a></li>            
+            </ul>
+        </div>
+    </div>
+    
+    <div id="Search">
+        <form id="form1" method="get" action="" target="_blank">
+            <input type="text" id="Google" name="word" title="Enter to Google and Shift + Enter to baidu" />
+        </form>
+        <script>
+            var se = document.getElementById("Google");
+            var form1 = document.getElementById("form1");
+            se.addEventListener("keydown",function(e){
+                if (e.keyCode == 13 && e.shiftKey) { 
+                    var text2 = "http://www.baidu.com/baidu";
+                    document.getElementById("form1").setAttribute("action",text2);                    
+                }
+                else if (e.keyCode == 13) { 
+                    var text = "https://www.google.com/#q=" + se.value;                    
+                    document.getElementById("form1").setAttribute("action",text);                
+                }
+            },false);
+        </script>
+    </div> 
+</div>
+</body>
+</html>
