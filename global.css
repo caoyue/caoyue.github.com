@@ -48,6 +48,22 @@ ul.list{
     padding:0;
 }
 
+#profile a{
+	color:rgb(28,127,219);
+	font-size:20px;
+	text-decoration:none;
+}
+
+#profile a:hover{
+    color: rgb(225,225,225) !important;
+    background-color:rgb(28, 127, 219);
+}
+
+#profile a:visited{
+    text-decoration:none;
+    color: rgba(28, 127, 219,0.3);
+}
+
 img{
     width:48px;
     height:48px;
