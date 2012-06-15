@@ -9,7 +9,7 @@ body{
 ul{
     list-style:none;
     margin:0;
-    padding:6px 0;
+    padding:0;
 }
 
 ul li{
@@ -72,6 +72,7 @@ a:hover{
 
 .Header{
     font-size:16pt;
+    margin-bottom:5px;
 }
 
 #StartLink{
