@@ -3,7 +3,6 @@ body{
     margin:0;
     font-size:12pt;
     font-family:'Segoe UI',Verdana,Arial; 
-    /*background-color:rgb(25,25,25);*/
 }
 
 ul{
@@ -72,7 +71,7 @@ a:hover{
 
 .Header{
     font-size:16pt;
-    margin-bottom:5px;
+    margin-bottom:6px;
 }
 
 #StartLink{
