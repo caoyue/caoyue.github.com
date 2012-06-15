@@ -3,23 +3,100 @@
 <head>
 <title>caoyue</title>
 <link rel="icon" type="image/png" href="favicon.ico">
-<link rel="stylesheet" type="text/css" href="global.css">
+<style>
+body{
+	color:rgba(0,0,0,0.6);
+	margin:0;
+	font-size:12pt;
+	font-family:'Segoe UI',Verdana,Arial; 
+	/*background-color:rgb(25,25,25);*/
+}
+
+ul{
+	list-style:none;
+	margin:0;
+	padding:10px;
+}
+
+ul li{
+	padding:6px;
+}
+
+li:hover{
+	background-color:rgb(229,229,229);
+}
+
+a{
+	color: rgba(0, 130, 135, 0.6);
+	text-decoration:none;
+}
+
+a:visited{
+	color: rgba(0, 130, 135, 0.6);
+}
+
+#Wrap{
+	position: absolute;
+	width:600px;
+	height:400px;
+	top:50%;
+	left:50%;
+	margin-top:-210px;
+	margin-left:-320px;
+	background-color:rgb(255,255,255);
+}
+
+#Banner{
+	margin:12px 0;
+}
+
+#Name{
+	font-size:32pt;
+	font-weight:normal;
+	margin-left:-3px;
+}
+
+#Left{
+	width:24%;
+	float: left;
+}
+
+#Right{
+	width:72%;
+	float:right;
+}
+
+.Header{
+	font-size:16pt;
+}
+</style>
 </head>
 <body>
-	<div id="wrap">
-		<div id="StartLink"><a href="start.html">&gt;&gt;</a></div>
-		<h1><a href="http://blog.caoyue.me">caoyue</a></h1>
-		<div id="intro">
-		    <p>Hi , I'm caoyue. </p>
-			 <p>I'm a web developer living in China.</p>
+	<div id="Wrap">
+		<div id="Banner">
+			<span id="Name">caoyue</span>
 		</div>
-		<ul id="profile" class="list">
-			<li><a href="http://blog.caoyue.me" title="My Blog">Blog</a></li>
-			<li><a href="https://twitter.com/caoyue" title="My Twitter">Twitter</a></li>
-			<li><a href="http://weibo.com/c4oyu3" title="My Weibo">Weibo</a></li>
-			<li><a href="https://github.com/caoyue" title="My GitHub">Github</a></li>
-			<li><a href="http://www.douban.com/people/caoyue/" title="My Douban">Douban</a></li>
-		</ul>
+		<div id="Left">
+			<span class="Header">Links</span>		
+			<ul id="profile" class="list">
+				<li><a href="http://blog.caoyue.me" title="My Blog">Blog</a></li>
+				<li><a href="https://twitter.com/caoyue" title="My Twitter">Twitter</a></li>
+				<li><a href="http://weibo.com/c4oyu3" title="My Weibo">Weibo</a></li>				
+				<li><a href="http://www.douban.com/people/caoyue/" title="My Douban">Douban</a></li>
+				<li><a href="https://github.com/caoyue" title="My GitHub">Github</a></li>
+			</ul>
+		</div>
+		<div id="Right">
+			<div id="intro">
+				<span class="Header">About Me</span>
+				<ul>
+				    <li>Hi , I'm caoyue.</li>
+				    <li>I'm a web developer living in China.</li>
+				    <li>Interested in web 2.0, Mobile apps and Games.</li>
+				    <li>AND I HATE GFW!</li>
+			    <ul>
+			</div>			
+		</div>
 	</div>
 </body>
 </html>
