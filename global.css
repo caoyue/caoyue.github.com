@@ -70,6 +70,7 @@ a:hover{
 }
 
 .Header{
+    display:block;
     font-size:16pt;
     padding-bottom:6px;
 }
