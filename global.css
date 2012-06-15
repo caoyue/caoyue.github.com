@@ -1,189 +1,130 @@
 body{
-    background-color:rgb(225,225,225);
-    color:rgb(28,127,219);
-    font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size:30px;
-	text-shadow:3px 3px 3px rgba(125,125,125,0.3);
+    color:rgba(0,0,0,.6);
+    margin:0;
+    font-size:12pt;
+    font-family:'Segoe UI',Verdana,Arial; 
+    /*background-color:rgb(25,25,25);*/
+}
+
+ul{
+    list-style:none;
+    margin:0;
+    padding:6px 0;
+}
+
+ul li{
+    padding:6px 1px;
+}
+
+li:hover{
+    background-color:rgb(229,229,229);
+}
+
+a{
+    display: block;
+    width:100%;
+    color: rgba(0, 130, 135, .6);
+    text-decoration:none;
 }
 
 a:focus{
     outline:none;
 }
 
-h1,p,ul.list{
-    margin-left:6%;
+a:visited{
+    color: rgba(0, 130, 135, .6);
 }
 
-h1{
+a:hover{
+    color: rgba(37, 187, 196, .5);
+}
+
+#Wrap{
+    position: absolute;
+    width:600px;
+    height:400px;
+    top:50%;
+    left:50%;
+    margin-top:-210px;
+    margin-left:-320px;
+    background-color:rgb(255,255,255);
+}
+
+#Banner{
+    margin:12px 0;
+}
+
+#Name{
+    font-size:32pt;
     font-weight:normal;
-    font-size:75px;
+    margin-left:-3px;
 }
 
-h1 a:link{
-	outline:0;
-	color:rgba(150,150,150,.4) !important;
-	text-decoration:none;
+#Left{
+    width:24%;
+    float: left;
 }
 
-h1 a:visited{
-	outline:0;
-	color:rgba(150,150,150,.4) !important;
+#Right{
+    width:72%;
+    float:right;
 }
 
-h1 a:hover{
-	outline:0;
-	cursor:pointer;
-	color:rgba(28, 127, 219,.4) !important;
-}
-
-ul.list{
-     margin-top:60px;
-    padding:0;
-}
-
-.list li{
-    display:inline;
-    list-style-type:none;
-    margin:20px 20px 20px 0;
-    padding:0;
-}
-
-#profile a{
-	color:rgb(28,127,219);
-	font-size:20px;
-	text-decoration:none;
-}
-
-#profile a:hover{
-    color: rgb(225,225,225) !important;
-    background-color:rgb(28, 127, 219);
-}
-
-#profile a:visited{
-    text-decoration:none;
-    color: rgba(28, 127, 219,0.3);
-}
-
-img{
-    width:48px;
-    height:48px;
-    border:none;
-	box-shadow:0 0 5px rgba(0,0,0,0.3);
- }
-
-img:hover{
-	box-shadow:0 0 10px rgba(0,0,0,0.3);
+.Header{
+    font-size:16pt;
 }
 
 #StartLink{
     position: fixed;
-    top:0;
     right:0;
-    font-size:24px;
-    font-weight:bold;
-    padding:6px 12px;
 }
 
-#StartLink a,#StartLink a:visited{
-    text-decoration:none;
-    color: rgba(28, 127, 219,0.3);
-}
-
-#StartLink a:hover{
-    color: rgb(225,225,225);
-    background-color:rgb(28, 127, 219);
+#StartLink a{
+    display: block;
+    width:66px;
+    height:66px;
 }
 
 /* start page */
-#HomeLink{
-    position: fixed;
-    top:0;
-    left:0;
-    font-size:20px;
-    font-weight:bold;
-    padding:6px 12px;
-}
-
-#HomeLink a,#HomeLink a:visited{
-    text-decoration:none;
-    color: rgba(28, 127, 219,0.3);
-}
-
-#HomeLink a:hover{
-    color: rgb(225,225,225);
-    background-color:rgb(28, 127, 219);
-}
-
-#wrap{
-    width:80%;
+#NAVLinks{
+    width:75%;
     margin:0 auto;
 }
 
 .column{
-    width:22%;
-    float:left;
-    margin:10px 10px;
+    width:20%;
+    margin:2%;
+    float: left;
 }
 
 .block{
+    margin:10px auto;
+}
+
+#HomeLink{
+    position: fixed;
     float:left;
-    clear:both;
-    font-size:18px;
-    box-shadow:0 0 3px rgba(0,0,0,0.3);
-    width:100%;
-    margin:10px 6px;
 }
 
-.block h3{
-    /*color: rgb(225,225,225);
-    background-color:rgba(28, 127, 219, 0.8);*/
-    color: rgba(150,150,150,0.4);
-    text-shadow:0 0 0 rgba(125,125,125,0.3);
-    font-size:24px;
-    font-weight:bold;
-    margin:15px 0 0 0;
-    padding: 0 12px;
-}
-
-ul.nav{
-    margin:6px 6px;
-    padding:0 6px;
-    list-style-type:none;
-}
-
-ul.nav li{
+#HomeLink a{
     display: block;
-    list-style-type:none;
-    padding:6px 6px;
-}
-
-.block a{
-    text-decoration:none;
-    color:rgb(28, 127, 219);
-}
-
-.block a:hover{
-    background-color:rgb(28, 127, 219);
-    color:rgb(225,225,225);
+    width:66px;
+    height:66px;
 }
 
 #Search{
     position:fixed;
     bottom:0;
-    clear:both;
-    width:80%;
-    margin:0 auto;
-    padding:0 12px;
+    font-size:14pt;
+    color:rgba(0,0,0,.3);
 }
 
-input{
-    width:88%;
-    margin:12px auto;
-    padding:6px 6px;
-    font-size:28px;
-    font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
-    color: rgb(28, 127, 219);
-    background-color:rgba(225,225,225,0.8);
+#Search input{
+    width:80%;
+    margin:0 auto;
+    color:rgba(0,0,0,.3);
+    font-size:14pt;
+    font-family:'Segoe UI',Verdana,Arial;
     border:none;
-    box-shadow:0 0 5px rgba(0,0,0,0.3)
 }
+
