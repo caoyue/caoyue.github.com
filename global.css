@@ -2,7 +2,7 @@ body{
     color:rgba(0,0,0,.6);
     margin:0;
     font-size:12pt;
-    font-family:'Segoe UI',Verdana,Arial; 
+    font-family:'Segoe UI',Verdana,Arial;
 }
 
 ul{
@@ -100,6 +100,7 @@ a:hover{
 
 .block{
     margin:10px auto;
+    padding-bottom: 10px;
 }
 
 #HomeLink{
@@ -115,6 +116,7 @@ a:hover{
 
 #Search{
     position:fixed;
+    width:100%;
     bottom:0;
     font-size:14pt;
     color:rgba(0,0,0,.3);

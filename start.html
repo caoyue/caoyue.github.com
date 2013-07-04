@@ -13,7 +13,7 @@
                 <span class="Header">GOOGLE</span>
                 <ul class="nav">
                     <li><a href="https://www.google.com/ncr" >Google</a></li>
-                    <li><a href="https://www.google.com/reader" >Reader</a></li>
+                    <li><del><a href="https://www.google.com/reader" >Reader</a></del></li>
                     <li><a href="https://mail.google.com/" >Gmail</a></li>
                     <li><a href="https://www.google.com/calendar/" >Calendar</a></li>
                     <li><a href="http://www.blogger.com/home" >Blogger</a></li>
@@ -23,10 +23,10 @@
             <div class="block">
                 <span class="Header">TECH</span>
                 <ul class="nav">
-                    <li><a href="https://www.v2ex.com/" >V2EX</a></li>
+                    <li><a href="https://v2ex.com/" >V2EX</a></li>
                     <li><a href="http://www.zhihu.com/" >Zhihu</a></li>
-                    <li><a href="http://www.infoq.com/cn/" >InfoQ</a></li>
-                    <li><a href="http://stackoverflow.com/" >StackOverflow</a></li>                
+                    <li><a href="http://www.quora.com/" >Quora</a></li>
+                    <li><a href="http://stackoverflow.com/" >StackOverflow</a></li>
                     <li><a href="http://news.ycombinator.com/news" >Hacker News</a></li>
                     <li><a href="http://www.reddit.com/" >Reddit</a></li>
                 </ul>
@@ -39,18 +39,20 @@
                 <ul class="nav">
                     <li><a href="https://github.com" >GitHub</a></li>
                     <li><a href="https://AppHarbor.com/" >AppHarbor</a></li>
+                    <li><a href="http://open.weibo.com/">Weibo API</a>
+                    <li><a href="http://dev.twitter.com/">Twitter API</a>
                     <li><a href="http://userscripts.org/home" >UserScript</a></li>
                 </ul>
-            </div> 
+            </div>
             <div class="block">
                 <span class="Header">TIMELINE</span>
                 <ul class="nav">
+                    <li><a href="http://i.caoyue.me" >Timeline</a></li>
         	        <li><a href="http://blog.caoyue.me" >Blog</a></li>
                     <li><a href="https://www.twitter.com/caoyue" >Twitter</a></li>
                     <li><a href="https://plus.google.com/" >Google Plus</a></li>
-                    <li><a href="http://weibo.com/c4oyu3" >Weibo</a></li> 
+                    <li><a href="http://weibo.com/c4oyu3" >Weibo</a></li>
                     <li><a href="http://www.douban.com/people/caoyue/" >Douban</a></li>
-                    <li><a href="http://thepast.me/i" >The Past Me</a></li>         
                 </ul>
             </div>
         </div>
@@ -59,10 +61,12 @@
             <div class="block">
                 <span class="Header">TOOLS</span>
                 <ul class="nav">
+                    <li><a href="https://cloud.feedly.com">Feedly</a></li>
+                    <li><a href="https://digg.com/reader">Digg</a></li>
                     <li><a href="https://mail.google.com/tasks/canvas" >Task</a></li>
                     <li><a href="https://www.evernote.com/" >Evernote</a></li>
                     <li><a href="https://getpocket.com/a/queue/list/" >Read It Later</a></li>
-                    <li><a href="http://translate.google.com/" >Translate</a></li>                
+                    <li><a href="http://translate.google.com/" >Translate</a></li>
                 </ul>
             </div>
             <div class="block">
@@ -71,29 +75,30 @@
                     <li><a href="http://www.taobao.com/" >Taobao</a></li>
     		        <li><a href="http://www.amazon.cn" >Amazon</a></li>
                     <li><a href="http://yixun.com/" >Yixun</a></li>
+                    <li><a href="http://jingdong.com">Jingdong</a></li>
                     <li><a href="http://www.alipay.com/" >Alipay</a></li>
                 </ul>
-            </div>          
-        </div>    
+            </div>
+        </div>
 
         <div class="column">
             <div class="block">
                 <span class="Header">FUN</span>
                 <ul class="nav">
                     <li><a href="http://douban.fm/" >Dounban.FM</a></li>
-                    <li><a href="http://acfun.tv" >Acfun</a></li>                
+                    <li><a href="http://acfun.tv" >Acfun</a></li>
                     <li><a href="http://youku.com/" >Youku</a></li>
                     <li><a href="http://wow.178.com/" >NGA</a></li>
     		        <li><a href="http://battle.net/" >Battle.net</a></li>
                 </ul>
-            </div> 
+            </div>
             <div class="block">
                 <span class="Header">NEWS</span>
                 <ul class="nav">
                     <li><a href="http://www.yeeyan.org/" >YeeYan</a></li>
                     <li><a href="http://163.com" >163</a></li>
                     <li><a href="http://data.weibo.com/top" >HOT</a></li>
-                    <li><a href="http://www.nytimes.com/" >NYTimes</a></li>            
+                    <li><a href="http://www.nytimes.com/" >NYTimes</a></li>
                 </ul>
             </div>
         </div>
@@ -108,17 +113,17 @@
             var se = document.getElementById("Google");
             var form1 = document.getElementById("form1");
             se.addEventListener("keydown",function(e){
-                if (e.keyCode == 13 && e.shiftKey) { 
+                if (e.keyCode == 13 && e.shiftKey) {
                     var text2 = "http://www.baidu.com/baidu";
-                    document.getElementById("form1").setAttribute("action",text2);         
+                    document.getElementById("form1").setAttribute("action",text2);
                 }
-                else if (e.keyCode == 13) { 
-                    var text = "https://www.google.com/#q=" + se.value;                    
-                    document.getElementById("form1").setAttribute("action",text);  
+                else if (e.keyCode == 13) {
+                    var text = "https://www.google.com/#q=" + se.value;
+                    document.getElementById("form1").setAttribute("action",text);
                 }
             },false);
         </script>
     </div>
-</div>     
+</div>
 </body>
 </html>
